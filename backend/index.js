@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin: 'http://localhost:5173', // Allows requests only from this frontend
+    origin: 'https://career-pilot.onrender.com', // Allows requests only from this frontend
     credentials: true // Allows browser ot sende cookies and authentication headers
 }
 app.use(cors(corsOptions));
